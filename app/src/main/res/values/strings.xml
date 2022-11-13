@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">MY MOVIES</string>
+    <string name="textViewTopFilms">TOP FILM VIEWS</string>
+    <string name="buttonAddViewing">ADD FILM VIEWING</string>
+    <string name="buttonQueries">QUERIES</string>
+    <string name="editTextFilmSearch">Please enter the title...</string>
+    <string name="buttonFindFilm">FIND</string>
+    <string name="buttonAddNewFilm">ADD NEW FILM</string>
+    <string name="editTextFilmTitle">Film Title</string>
+    <string name="editTextFilmOriginalTitle">Original Film Title</string>
+    <string name="editTextFilmYear">Release Year</string>
+    <string name="editTextFilmRunningTime">Film Running Time</string>
+    <string name="editTextFilmGenres">Genres (Use ´,´ As Separator)</string>
+    <string name="editTextViewingDates">Viewing Dates (Use "#" As Separator)</string>
+    <string name="buttonSaveFilm">SAVE</string>
+    <string name="badInput">Bad Input</string>
+    <string name="editTextViewingDate">Enter New Viewing Date</string>
+    <string name="editTextGenre">Genre</string>
+    <string name="textRunningTime">Running Time (Minutes) </string>
+    <string name="textMin"> Min </string>
+    <string name="textAnd"> - </string>
+    <string name="textMax"> Max </string>
+    <string name="textFilmGenres">Genres</string>
+    <string name="textViewingDates">Viewing Dates</string>
+    <string name="buttonEditMovie">Edit Movie</string>
+</resources>

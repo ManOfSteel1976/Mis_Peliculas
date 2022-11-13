@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MovieData">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/editTextFilmTitle"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/editTextFilmTitle"
+                android:inputType="textPersonName"
+                android:text="@string/editTextFilmTitle"
+                android:textAlignment="center"
+                android:textSize="18dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/editTextFilmOriginalTitle"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/editTextFilmOriginalTitle"
+                android:inputType="textPersonName"
+                android:text="@string/editTextFilmOriginalTitle"
+                android:textAlignment="center"
+                android:textSize="18dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/editTextFilmYear"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/editTextFilmYear"
+                android:inputType="number"
+                android:text="@string/editTextFilmYear"
+                android:textAlignment="center"
+                android:textSize="18dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textMin"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/editTextFilmRunningTime"
+                android:inputType="number"
+                android:text="@string/editTextFilmRunningTime"
+                android:textAlignment="center"
+                android:textSize="18dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/editTextFilmGenres"
+                android:layout_width="150dp"
+                android:layout_height="80dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/editTextFilmGenres"
+                android:inputType="textLongMessage"
+                android:text="@string/textFilmGenres"
+                android:textAlignment="center"
+                android:textSize="18dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/editTextFilmViewingDates"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/editTextViewingDates"
+                android:inputType="textLongMessage"
+                android:text="@string/textViewingDates"
+                android:textAlignment="center"
+                android:textSize="18dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="44dp" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/buttonEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="goEditMovie"
+                android:text="@string/buttonEditMovie" />
+        </TableRow>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

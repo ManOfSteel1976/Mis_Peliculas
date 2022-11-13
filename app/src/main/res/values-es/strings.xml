@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">MIS PELÍCULAS</string>
+    <string name="textViewTopFilms">TOP VISIONADOS</string>
+    <string name="buttonAddViewing">AÑADIR VISIONADO</string>
+    <string name="buttonQueries">CONSULTAS</string>
+    <string name="editTextFilmSearch">Por favor, introduce el título...</string>
+    <string name="buttonFindFilm">BUSCAR</string>
+    <string name="buttonAddNewFilm">AÑADIR NUEVA PELÍCULA</string>
+    <string name="editTextFilmTitle">Título</string>
+    <string name="editTextFilmOriginalTitle">Título Original</string>
+    <string name="editTextFilmYear">Año De Salida</string>
+    <string name="editTextFilmRunningTime">Duración</string>
+    <string name="editTextFilmGenres">Géneros (Separados por comas)</string>
+    <string name="editTextViewingDates">Fecha/s De Visionado (Separados por #)</string>
+    <string name="buttonSaveFilm">GUARDAR</string>
+    <string name="badInput">Entrada Errónea</string>
+    <string name="editTextViewingDate">Introduce Nuevo Visionado</string>
+    <string name="editTextGenre">Género</string>
+    <string name="textRunningTime">Duración (Minutos) </string>
+    <string name="textMin"> Min </string>
+    <string name="textAnd"> - </string>
+    <string name="textMax"> Max </string>
+    <string name="textFilmGenres">Géneros</string>
+    <string name="textViewingDates">Visionados</string>
+    <string name="buttonEditMovie">Editar Película</string>
+</resources>
