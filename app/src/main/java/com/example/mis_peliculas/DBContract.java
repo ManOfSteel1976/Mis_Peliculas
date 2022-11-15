@@ -14,6 +14,5 @@ public final class DBContract {
         public static final String COLUMN_NAME_RUNNING_TIME = "duracion";
         public static final String COLUMN_NAME_GENRE = "generos";
         public static final String COLUMN_NAME_VIEWINGS = "visionados";
-        public static final String COLUMN_NAME_VIEWINGS_COUNT = "num_visionados";
     }
 }

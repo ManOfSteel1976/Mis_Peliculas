@@ -15,8 +15,7 @@ public class DBHelper extends SQLiteOpenHelper {
                     DBContract.FilmEntry.COLUMN_NAME_YEAR + " INTEGER," +
                     DBContract.FilmEntry.COLUMN_NAME_RUNNING_TIME + " INTEGER," +
                     DBContract.FilmEntry.COLUMN_NAME_GENRE + " TEXT," +
-                    DBContract.FilmEntry.COLUMN_NAME_VIEWINGS + " TEXT," +
-                    DBContract.FilmEntry.COLUMN_NAME_VIEWINGS_COUNT + " INTEGER DEFAULT 0" +
+                    DBContract.FilmEntry.COLUMN_NAME_VIEWINGS + " TEXT" +
                     " )";
 
     public static final String SQL_DELETE_ENTRIES =

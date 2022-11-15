@@ -4,9 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddEditMovie">
+    tools:context=".AddMovie">
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginStart="8dp"
@@ -26,8 +27,9 @@
             <EditText
                 android:id="@+id/editTextFilmTitle"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="40dp"
                 android:ems="10"
+                android:gravity="center|center_horizontal|center_vertical"
                 android:hint="@string/editTextFilmTitle"
                 android:inputType="textPersonName"
                 android:textAlignment="center"
@@ -41,8 +43,9 @@
             <EditText
                 android:id="@+id/editTextFilmOriginalTitle"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="40dp"
                 android:ems="10"
+                android:gravity="center|center_horizontal|center_vertical"
                 android:hint="@string/editTextFilmOriginalTitle"
                 android:inputType="textPersonName"
                 android:textAlignment="center"
@@ -56,8 +59,9 @@
             <EditText
                 android:id="@+id/editTextFilmYear"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="40dp"
                 android:ems="10"
+                android:gravity="center|center_horizontal|center_vertical"
                 android:hint="@string/editTextFilmYear"
                 android:inputType="number"
                 android:textAlignment="center"
@@ -69,10 +73,11 @@
             android:layout_height="wrap_content">
 
             <EditText
-                android:id="@+id/textMin"
+                android:id="@+id/editTextRunningTime"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="40dp"
                 android:ems="10"
+                android:gravity="center|center_horizontal|center_vertical"
                 android:hint="@string/editTextFilmRunningTime"
                 android:inputType="number"
                 android:textAlignment="center"
@@ -86,9 +91,9 @@
             <EditText
                 android:id="@+id/editTextFilmGenres"
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="40dp"
                 android:ems="10"
-                android:gravity="start|top"
+                android:gravity="center|center_horizontal|center_vertical"
                 android:hint="@string/editTextFilmGenres"
                 android:inputType="textLongMessage"
                 android:textAlignment="center"
@@ -102,32 +107,38 @@
             <EditText
                 android:id="@+id/editTextFilmViewingDates"
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="40dp"
                 android:ems="10"
-                android:gravity="start|top"
+                android:gravity="center|center_horizontal|center_vertical"
                 android:hint="@string/editTextViewingDates"
-                android:inputType="textLongMessage"
+                android:inputType="date"
                 android:textAlignment="center"
                 android:textSize="18dp" />
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="44dp" />
+            android:layout_height="214dp" />
 
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center_horizontal">
 
-            <Button
-                android:id="@+id/buttonEdit"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="onClick"
-                android:text="@string/buttonSaveFilm"
-                tools:text="@string/buttonSaveFilm" />
         </TableRow>
     </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="420dp"
+        android:onClick="onClick"
+        android:text="@string/buttonSaveFilm"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/buttonSaveFilm" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
