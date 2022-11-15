@@ -70,9 +70,11 @@ public class MainActivity extends AppCompatActivity {
         while(cursor.moveToNext()) {
             String titulo = cursor.getString(
                     cursor.getColumnIndexOrThrow(DBContract.FilmEntry.COLUMN_NAME_TITLE));
+            String anyo = cursor.getString(
+                    cursor.getColumnIndexOrThrow(DBContract.FilmEntry.COLUMN_NAME_YEAR));
             String fecha = cursor.getString(
                     cursor.getColumnIndexOrThrow(DBContract.FilmEntry.COLUMN_NAME_VIEWINGS));
-            films.add(titulo+" ("+fecha+(")"));
+            films.add(titulo+" ["+anyo+"]"+" ("+fecha+(")"));
         }
         cursor.close();
 
