@@ -30,7 +30,7 @@ public class AddMovie extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_movie);
 
-        dbHelper = new DBHelper(getApplicationContext(), "peliculas4.db");
+        dbHelper = new DBHelper(getApplicationContext(), "peliculas5.db");
         db = dbHelper.getWritableDatabase();
 
         editTextFilmTitle = (EditText) findViewById(R.id.editTextFilmTitle);

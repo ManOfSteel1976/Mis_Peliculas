@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">MY MOVIES</string>
-    <string name="textViewTopFilms">TOP FILM VIEWS</string>
+    <string name="textViewRecentFilms">RECENT FILM VIEWS</string>
     <string name="buttonAddViewing">ADD FILM VIEWING</string>
     <string name="buttonQueries">QUERIES</string>
     <string name="editTextFilmTitle">Film Title</string>
