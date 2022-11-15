@@ -124,7 +124,7 @@ public class Queries extends AppCompatActivity {
                 if(genres.isEmpty()){
                     if(timeMin.isEmpty() && timeMax.isEmpty()){
                         // 1100
-                        Toast.makeText(this, R.string.withoutCriteria, Toast.LENGTH_LONG).show();
+                        Toast.makeText(this, "1100", Toast.LENGTH_LONG).show();
                     }else if (!timeMin.isEmpty() && !timeMax.isEmpty()){
                         Toast.makeText(this, "1101", Toast.LENGTH_LONG).show();
                     }else{
