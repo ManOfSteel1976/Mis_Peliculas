@@ -9,6 +9,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.provider.BaseColumns;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
@@ -56,6 +57,12 @@ public class Queries extends AppCompatActivity {
         switch(view.getId()){
             case R.id.buttonFind:SearchFilms(); break;
         }
+    }
+
+    private void hideSoftKeyboard(View v) {
+        InputMethodManager inputMethodManager;
+        inputMethodManager = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
+        inputMethodManager.hideSoftInputFromWindow(v.getWindowToken(), 0);
     }
 
     public void SearchFilms () {
@@ -552,7 +559,6 @@ public class Queries extends AppCompatActivity {
             }
         }
 
-        
 
         if(films.isEmpty()){
             films.add("No hay resultados");
@@ -562,6 +568,7 @@ public class Queries extends AppCompatActivity {
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,films);
         listView.setAdapter(adapter);
+        hideSoftKeyboard(listView);
 
     }
 
