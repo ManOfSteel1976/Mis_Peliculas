@@ -560,10 +560,6 @@ public class Queries extends AppCompatActivity {
         }
 
 
-        if(films.isEmpty()){
-            films.add("No hay resultados");
-        }
-
         listView = findViewById(R.id.listView);
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,films);

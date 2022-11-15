@@ -18,6 +18,6 @@
     <string name="textAnd"> - </string>
     <string name="textMax"> Max </string>
     <string name="buttonFindFilm">FIND</string>
-    <string name="withoutCriteria">You Haven not Set a Search Criteria</string>
+    <string name="withoutCriteria">You Have Not Set a Search Criteria</string>
     <string name="invalidInterval">Time Interval Not Valid</string>
 </resources>
